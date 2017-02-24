@@ -1,0 +1,5 @@
+<%= form_for :house, url: house_path(@house), method: :patch do |house_form| %>
+Name: <%= house_form.text_field :name %>
+Motto: <%= house_form.text_field :motto %>
+<%= house_form.button %>
+<% end %>

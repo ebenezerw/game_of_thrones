@@ -7,19 +7,29 @@ class HousesController < ApplicationController
         @house = House.find(params[:id])
     end
 
-    def new
-
-    end
+    def new; end
 
     def create
-      @house = House.create(house_params)
+        @house = House.create(house_params)
+        redirect_to @house
+     end
+
+    def edit
+        @house = House.find(params[:id])
+    end
+
+    def update
+      @house = House.find(params[:id])
+      @house.update(house_params)
       redirect_to @house
-     end
+    end
 
-     def edit
+def destroy
+  @house = House.find(params[:id])
+  @house.destroy
+  redirect_to houses_path
 
-     end
-
+end
     private
 
     def house_params

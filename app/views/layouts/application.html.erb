@@ -3,7 +3,7 @@
     <head>
         <title>Game Of Thrones</title>
         <%= csrf_meta_tags %>
-
+        <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" %>
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
@@ -11,6 +11,7 @@
     <body>
         <div class="background"></div>
         <div class="content">
+          <%= link_to "Home", houses_path %>
             <h1>Game of Thrones</h1>
             <%= yield %>
         </div>
