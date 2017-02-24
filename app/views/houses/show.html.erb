@@ -1,0 +1,10 @@
+<%= link_to "Back", :back %>
+<h2><%= @house.name %></h2>
+<h4>"<%= @house.motto %>"</h4>
+<hr>
+<% @house.characters.each do |character| %>
+<%= character.name %>:
+<%= character.title %>
+<p>
+
+    <% end %>

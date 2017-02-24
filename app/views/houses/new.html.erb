@@ -1,0 +1,7 @@
+<%= link_to "Back", :back %>
+
+<%= form_for :house, url: houses_path do |house_form| %>
+  Name: <%= house_form.text_field :name %>
+  Motto: <%= house_form.text_field :motto %>
+  <%= house_form.button %>
+<% end %>

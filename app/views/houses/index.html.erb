@@ -1,0 +1,7 @@
+<%= link_to "Create New House", new_house_path %>
+<% @house.each do |house| %>
+<div class="houses">
+    <h2><%= link_to house.name, house_path(house) %></h2>
+    <h4>"<%= house.motto %>"</h4>
+</div>
+<%  end %>
