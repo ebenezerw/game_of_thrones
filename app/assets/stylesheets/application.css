@@ -29,3 +29,9 @@
     border: none;
     background-image: url("http://logos-download.com/wp-content/uploads/2016/09/Game_of_Thrones_logo_logotype_wordmark.png");
 }
+
+div{
+  border: solid 1px black;
+  padding: 10px;
+  margin: 10px;
+}

@@ -1,5 +1,5 @@
-<%= link_to "Create New House", new_house_path %>
+<center><%= link_to "Create New House", new_house_path %></center>
 <% @house.each do |house| %>
-    <h2><%= link_to house.name, house_path(house) %></h2>
-    <h4>"<%= house.motto %>"</h4>
+    <div><h2><%= link_to house.name, house_path(house) %></h2>
+    <h4>"<%= house.motto %>"</h4></div>
 <%  end %>
